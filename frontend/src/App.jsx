@@ -92,10 +92,7 @@ function Dashboard(){
       <Stat label="Prediction status" value="Advisory only" sub="Sign-off antenna DRC remains authoritative" tone="amber"/>
     </div>
     <div className="stats">
-      <Stat label="Saved predictions" value={stats.total} sub="Checks in your account"/>
-      <Stat label="High risk" value={stats.high} sub="Prioritize review" tone="red"/>
-      <Stat label="Medium risk" value={stats.medium} sub="Monitor closely" tone="amber"/>
-      <Stat label="Average model score" value={`${Math.round(stats.average_probability*100)}%`} sub="Across saved runs; not calibrated" tone="blue"/>
+      
     </div>
     <div className="grid two">
       <section className="panel hero"><div className="eyebrow">RECOMMENDED SCREENING WORKFLOW</div><h2>Design with more visibility.</h2><p>Extract consistent net features, screen with a compatible trained model, prioritize engineering review, and confirm the design with the appropriate antenna checker.</p><div className="chip-row"><span>ML risk screening</span><span>Batch CSV import</span><span>Verified EDA loop</span></div><div className="quick-actions"><NavLink className="primary" to="/predict">Analyze a net →</NavLink><NavLink className="secondary" to="/batch">Import multiple nets</NavLink></div></section>
