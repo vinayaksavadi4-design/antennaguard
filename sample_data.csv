@@ -1,0 +1,5 @@
+metal_area,gate_area,wire_length,layer_count,metal_width,spacing
+51,8,236,3,0.45,0.18
+82,7,420,6,0.70,0.08
+18,12,95,2,0.20,0.50
+65,5,360,5,0.60,0.12

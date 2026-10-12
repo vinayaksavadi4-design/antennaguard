@@ -1,0 +1,15 @@
+services:
+  antennaguard:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      ENVIRONMENT: production
+      SECRET_KEY: ${SECRET_KEY:?Set a strong SECRET_KEY in the project-root .env file}
+      DATABASE_URL: sqlite:////app/data/antennaguard.db
+      CORS_ORIGINS: http://localhost:8000
+    volumes:
+      - antennaguard_data:/app/data
+
+volumes:
+  antennaguard_data:

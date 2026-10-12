@@ -1,0 +1,21 @@
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/.pytest_cache/
+backend/.env
+backend/antennaguard.db
+backend/models/*.pkl
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local Docker Compose secrets
+.env
