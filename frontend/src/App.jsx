@@ -22,7 +22,7 @@ function Layout() {
   useEffect(() => { api.health().then(setHealth).catch(() => setHealth(null)) }, [])
 
   function logout() { signOut(); nav('/login') }
-  const links = [['/dashboard', 'Dashboard'], ['/predict', 'Analyze net'], ['/batch', 'Batch import'], ['/validation', 'Validation'], ['/verification', 'EDA Verification'], ['/history', 'History'], ['/workflow', 'Workflow']]
+  const links = [['/dashboard', 'Dashboard'], ['/predict', 'Analyze net'], ['/batch', 'Batch import'], ['/validation', 'Antennaaaaaa'], ['/verification', 'EDA Verification'], ['/history', 'History'], ['/workflow', 'Workflow']]
 
   return <div className="app-shell">
     <aside className={`sidebar ${open ? 'open' : ''}`}>
