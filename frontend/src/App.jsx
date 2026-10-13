@@ -86,10 +86,7 @@ function Dashboard(){
   return <Page title={`Good to see you, ${user?.name?.split(' ')[0] || 'there'}.`} eyebrow="ANTENNA-RULE RISK SCREENING" description="A validation-first workspace for machine-learning-assisted antenna-risk triage across routed nets." action={<><button className="secondary" onClick={load} disabled={loading}>{loading?'Refreshing…':'Refresh status'}</button> <NavLink className="primary" to="/predict">＋ Analyze a net</NavLink></>}>
     {error&&<div className="alert error">Could not load personal prediction statistics: {error}</div>}
     <div className="stats overview-stats">
-      <Stat label="Backend status" value={health?'Online':'Offline'} sub={health?.service||'Connect to local API'} tone={health?'':'red'}/>
-      <Stat label="Model availability" value={modelInfo?'Loaded':'Unknown'} sub={modelInfo?.version||'Waiting for model metadata'} tone={modelInfo?'blue':'amber'}/>
-      <Stat label="Validation report" value={modelInfo?.validation_metrics?'Available':'Not found'} sub={modelInfo?.validation_method||'Metrics load from model evaluation'} tone={modelInfo?.validation_metrics?'':'amber'}/>
-      <Stat label="Prediction status" value="Advisory only" sub="Sign-off antenna DRC remains authoritative" tone="amber"/>
+      
     </div>
     <div className="stats">
       <Stat label="Saved predictions" value={stats.total} sub="Checks in your account"/>
